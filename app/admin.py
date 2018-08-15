@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
-from .models import User, Book, Issue, rbook
+from .models import User, Book, Issue, Return
 
 # Register your models here.
 
@@ -28,7 +28,7 @@ class IssueAdmin(admin.ModelAdmin):
 
 admin.site.register(User, UserAdmin)
 admin.site.register(Book, BookAdmin)
-admin.site.register(rbook,)
+admin.site.register(Return,)
 admin.site.register(Issue, IssueAdmin)
 
 admin.site.unregister(Group,)

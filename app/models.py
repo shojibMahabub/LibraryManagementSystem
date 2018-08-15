@@ -52,7 +52,7 @@ class Issue(models.Model):
             self.book_name.save()
 
 
-class rbook(models.Model):
+class Return(models.Model):
     return_id = models.CharField(max_length=10)
     issue_id = models.ForeignKey(Issue, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
