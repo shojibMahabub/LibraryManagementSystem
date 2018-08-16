@@ -1,19 +1,13 @@
-# LIBRARY MANAGEMENT SYSTEM
 
-An app made with **Django**. This app automates tasks of a librarian and keep records organised.
- 
-# INSTALLATION
-Create a virtual environment and install from `requierments.txt`	. This will make all dependencies install required for the project.
+# Library Management System
 
-# FLOW CHART
-Admin
-```mermaid
-graph LR
-C[USER] -- request --> A[DATABASE]
-A[DATABASE] -- authentication --> B((ADMIN))
-B --> D{VIEW}
-```
-Adding user
+A Django application made for librarians. This application will automate the tasks assigned for a librarian and keep data organized.
 
-```mermaid
-graph LR
+## Getting Started
+
+clone the github project
+
+    git clone https://github.com/shojibMahabub/LibraryManagementSystem.git
+Run the django development server with `manage.py` in the project folder
+
+    python manage.py runserver
