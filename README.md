@@ -36,13 +36,30 @@ And run the development server by this command.
 
 ## Features
 
-- **Keeps records of available books**
-- **Keeps records of members**
+ - **Keeps records of available books**
+		Admin of the system can add books into the database. A model named 
+		**Book**  of the system has necessary fields. This model gives Admin 
+		to keep records of available books
+		
+ - **Keeps records of members**
+  		Admin of the system can add members into the database. Every member 
+  		have unique field to represent a specific member of the library. The 
+  		system specificly contain a model named **User**.
+  		
 - **Keeps records of issued books** 
-- **Keeps records of returned books**
-- **Keeps track about how many books are available after issue and return**
-- **Generate a FINE ticket for users who crossed returned date**
+		Admin of the system can issue a book to a member and keep track of a 
+		issue ticket. **Issue** model have linked with **Book** and **User** model by foreign key
 
+
+- **Keeps records of returned books**
+		Admin of the system can take books retrun from the user. **Return** model is linked to the **Issue** model. When Admin initiates to take a book as return the system will simple clear the issue ticket for the specific member and update the remaining book data.
+- **Keeps track about how many books are available after issue and return**
+		The system is able to keep records about available books so that the 
+		Admin can see wheather a book is available or not
+- **Generate a FINE ticket for users who crossed returned date**
+		The system generates a return date which is default at the time of issue a 
+		book and checks the date at the time of returned date.If the member 
+		cross his day limit the system tags him with a flag fine
 ## Authors
 
 
