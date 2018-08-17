@@ -1,4 +1,5 @@
 
+
 # Library Management System
 
 A Django application made for librarians. This application will automate the tasks assigned for a librarian and keep data organized.
@@ -9,24 +10,38 @@ Make a virtual environment and clone the github project in it. If you have git i
 
     git clone https://github.com/shojibMahabub/LibraryManagementSystem.git
 
-### Prerequisites
+#### Prerequisites:
 
-Add all the required dependencies needed for the project. While activeting the virtualenv with `source bin/activate` from the directory of`requirement.txt` use this command.
+Add all the required dependencies needed for the project. While activeting the **virtualenv** with `source bin/activate` from the directory of`requirement.txt` use this command.
 
     pip install -r requirements.txt
 
-### Running the app
+## Running the app
 
 After cloning the repository in virtualenv and add dependencies from `requirements.txt` file. Migrate all changes of models into the Database with `manage.py` by using this command. Make sure you are on the same directory as `manage.py`.
 
 ```
 python manage.py makemigrations
 ```
+```
+python manage.py migrate
+```
 And run the development server by this command.
 
     python manage.py runserver
+#### Credentials:
 
+    Admin 	: 	shojib
+    password: 	8842
 
+## Features
+
+- **Keeps records of available books**
+- **Keeps records of members**
+- **Keeps records of issued books** 
+- **Keeps records of returned books**
+- **Keeps track about how many books are available after issue and return**
+- **Generate a FINE ticket for users who crossed returned date**
 
 ## Authors
 
